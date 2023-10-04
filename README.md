@@ -1,7 +1,5 @@
-# SQL Server
+# SQL Server - Principais Conceitos e Comandos
 
-
-## Conceitos Abordados e Aplicados em Prática
 
 ### Banco de Dados
 - **CREATE DATABASE**: Cria um novo banco de dados.
@@ -29,17 +27,37 @@
 - **MAX()**: Retorna o valor máximo em uma coluna.
 - **MIN()**: Retorna o valor mínimo em uma coluna.
 
-## Junções (Joins)
-- **INNER JOIN**: Retorna registros que têm correspondência em ambas as tabelas.
-- **LEFT JOIN**: Retorna todos os registros da tabela à esquerda e os registros correspondentes da tabela à direita.
-- **RIGHT JOIN**: Retorna todos os registros da tabela à direita e os registros correspondentes da tabela à esquerda.
-- **FULL JOIN**: Retorna registros quando há uma correspondência em uma das tabelas.
+## Funções de Strings
+- **LEN()**: Retorna o comprimento de uma string.
+- **LEFT()**: Retorna os primeiros caracteres de uma string.
+- **RIGHT()**: Retorna os últimos caracteres de uma string.
+- **LOWER()**: Converte uma string para minúsculas.
+- **UPPER()**: Converte uma string para maiúsculas.
+- **SUBSTRING()**: Retorna uma parte específica de uma string.
 
-## Transações
-- **BEGIN TRANSACTION**: Inicia uma nova transação.
-- **COMMIT**: Confirma a transação e faz as alterações permanentes.
-- **ROLLBACK**: Desfaz as alterações feitas durante a transação não confirmada.
+## Funções de Data e Hora
+- **GETDATE()**: Retorna a data e hora atuais.
+- **DATEPART()**: Retorna uma parte específica de uma data ou hora (dia, mês, ano, etc.).
+- **DATEDIFF()**: Retorna a diferença entre duas datas ou horas.
 
+## Constraints
+- **PRIMARY KEY**: Define uma chave primária para uma tabela.
+- **FOREIGN KEY**: Define uma chave estrangeira para estabelecer relações entre tabelas.
+- **CHECK**: Impõe uma condição específica para os valores em uma coluna.
+- **UNIQUE**: Garante que os valores em uma coluna são únicos.
 
+## Operadores e Cláusulas Úteis
+- **BETWEEN**: Filtra resultados dentro de um intervalo específico.
+- **LIKE**: Filtra resultados com base em padrões de texto.
+- **IN**: Especifica uma lista de valores para corresponder em uma cláusula WHERE.
+- **INTERSECT**: Retorna os resultados que estão presentes em ambas as consultas.
+- **EXCEPT**: Retorna os resultados que estão presentes na primeira consulta, mas não na segunda.
 
+## Subqueries
+- **Subqueries Escalares**: Retorna um único valor (pode ser usado em SELECT, WHERE, etc.).
+- **Subqueries Correlacionadas**: Referencia colunas da consulta externa na subconsulta.
+- **Subqueries com EXISTS**: Retorna verdadeiro se a subconsulta encontrar algum resultado.
 
+## Temporary Tables
+- **CREATE TABLE #nome_da_tabela**: Cria uma tabela temporária que existe apenas durante a sessão atual.
+- **DROP TABLE #nome_da_tabela**: Exclui a tabela temporária.
